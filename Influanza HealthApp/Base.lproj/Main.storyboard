@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -345,6 +344,23 @@
                     <view key="view" contentMode="scaleToFill" id="BTP-h4-lwh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flu Shot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8F4-oZ-g1E">
+                                <rect key="frame" x="16" y="64" width="343" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="32"/>
+                                <color key="textColor" red="0.43220248290000002" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="duN-Dp-9VY">
+                                <rect key="frame" x="16" y="125" width="343" height="493"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">∙ The flu virus is constantly changing, making us vulnerable to the flu every year.                                ∙ The flu vaccine contains antigens of the predicted flu strains for that season                          ∙ Anyone over the age of 6 months should receive a flu vaccine every year                                                 ∙ Administered in a shot in the upper arm or, under special circumstances, may be given in the nose                                                                                   ∙ A single dose of the flu vaccine should be given before the onset of flu activity                                        ∙ The flu shot does contain a live virus, those who should not receive the live virus vaccine include: children ages 2-4 who have asthma, persons who are immunocompromised, close contacts and caregivers of an immunocompromised person, pregnant women, and people who have received influenza antiviral medications within the previous 48 hours</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qjJ-du-Azk"/>
                     </view>
@@ -352,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZ2-X6-Mbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="399" y="27"/>
+            <point key="canvasLocation" x="397.60000000000002" y="26.53673163418291"/>
         </scene>
         <!--FAQs-->
         <scene sceneID="ejj-Nh-mL0">
@@ -381,7 +397,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1403" id="xze-ik-A9c"/>
                                         </constraints>
-                                        <mutableString key="text">1. Why should I get the flu shot? 	- If you get the flu shot, it allows your body to 		fight off the flu virus if you are exposed to the flu 	virus and/or become infected 	- While you may still display flu symptoms if 		infected with the flu, the flu shot prepares your 		body and can help prevent the symptoms from 		becoming so bad that you would need 				hospitalization or even experience death related 	to the flu 2. By getting the flu shot you can protect populations that have poor immunities such as infants, elderly, pregnant, and those who have poor immune systems and difficulty fighting off infection 3. Can I develop the flu because of receiving the flu shot? 	- No, it is a myth that the flu shot causes the flu. 	People that become sick right after getting the 		flu shot were likely already infected witha  virus 	which could be the flu virus or simply mimic flu 		like symptoms. 4. Should my 3 month old get the flu shot? 	- No, the flu shot is indicated for those 6 months 	and older. Babies and children could need 			multiple doses to develop a good immune 			response against the flu. Your pediatrician will 		recommend the proper doses for your children. 5. Do I have to get a shot in my arm? 	- No, this year the nasal spray could be a way for 	you to receive your vaccination. Talk with your 		doctor about the best way for you to receive your 	shot this year. 6. When should I get my shot? 	- As soon as the shots become readily available 	throughout your community. Try to aim for 			getting your flu shot before the end of October. 7. Are there risks for autism for my child? 	- No. The study that showed this was later 			deemed false. No true correlation has been found 	in research. 8. What if I am allergic to eggs? 	- Most likely, your doctor will still recommend the 	flu shot as the potential benefits of receiving the 	shot outweigh the serious risks of becoming sick 	with the flu virus. Most vaccines have very little 	egg content if any. 9. If I get the flu, what should I do? 	- Your doctor or medical prescriber may 			prescribe medications like Tamiflu to help prevent 	flu from 	causing severe or dangerous symptoms. 	-It is best to stay home and take Tylenol to help 	with the fever. 	- Symptoms may last up to 2 weeks, but your 		body should be able to fight off the virus 			eventually. 	- Drink plenty of fluids and get plenty of rest. 	- Wash your hands with soap and water 			frequently. 	- Cover mouth whne coughing or sneezing. 10. When can I go back to work or school? 	- Consult your doctor, however do not return until 	your fever has been away for AT LEAST 24 hours 	following the discontinuation of anti0viral			medications. Remember the importance of 			washing your hands and if still sneezing or 			coughing, you may consider staying home longer 	to protect your family, coworkers, and/or 			community members. 11. What if my arm is sore following the flu shot for a few days? 	- Common side effects may include tenderness 	of the injection site, headache, slight rash, or 		slight fever. 12. Should I go to the Emergency Room if I develop the flu? 	- Usually your doctor can treat your flu symptoms 	in the office. 	- Reasons to go to the ER would be for: 		∙ Difficulty breathing 		∙ Confusion 		∙ Difficulty to arouse 		∙ Dehydration caused by severe vomiting 			and/or diarrhea symptoms</mutableString>
+                                        <string key="text">1. Why should I get the flu shot? 	- If you get the flu shot, it allows your body to 		fight off the flu virus if you are exposed to the flu 	virus and/or become infected 	- While you may still display flu symptoms if 		infected with the flu, the flu shot prepares your 		body and can help prevent the symptoms from 		becoming so bad that you would need 				hospitalization or even experience death related 	to the flu 2. By getting the flu shot you can protect populations that have poor immunities such as infants, elderly, pregnant, and those who have poor immune systems and difficulty fighting off infection 3. Can I develop the flu because of receiving the flu shot? 	- No, it is a myth that the flu shot causes the flu. 	People that become sick right after getting the 		flu shot were likely already infected witha  virus 	which could be the flu virus or simply mimic flu 		like symptoms. 4. Should my 3 month old get the flu shot? 	- No, the flu shot is indicated for those 6 months 	and older. Babies and children could need 			multiple doses to develop a good immune 			response against the flu. Your pediatrician will 		recommend the proper doses for your children. 5. Do I have to get a shot in my arm? 	- No, this year the nasal spray could be a way for 	you to receive your vaccination. Talk with your 		doctor about the best way for you to receive your 	shot this year. 6. When should I get my shot? 	- As soon as the shots become readily available 	throughout your community. Try to aim for 			getting your flu shot before the end of October. 7. Are there risks for autism for my child? 	- No. The study that showed this was later 			deemed false. No true correlation has been found 	in research. 8. What if I am allergic to eggs? 	- Most likely, your doctor will still recommend the 	flu shot as the potential benefits of receiving the 	shot outweigh the serious risks of becoming sick 	with the flu virus. Most vaccines have very little 	egg content if any. 9. If I get the flu, what should I do? 	- Your doctor or medical prescriber may 			prescribe medications like Tamiflu to help prevent 	flu from 	causing severe or dangerous symptoms. 	-It is best to stay home and take Tylenol to help 	with the fever. 	- Symptoms may last up to 2 weeks, but your 		body should be able to fight off the virus 			eventually. 	- Drink plenty of fluids and get plenty of rest. 	- Wash your hands with soap and water 			frequently. 	- Cover mouth whne coughing or sneezing. 10. When can I go back to work or school? 	- Consult your doctor, however do not return until 	your fever has been away for AT LEAST 24 hours 	following the discontinuation of anti0viral			medications. Remember the importance of 			washing your hands and if still sneezing or 			coughing, you may consider staying home longer 	to protect your family, coworkers, and/or 			community members. 11. What if my arm is sore following the flu shot for a few days? 	- Common side effects may include tenderness 	of the injection site, headache, slight rash, or 		slight fever. 12. Should I go to the Emergency Room if I develop the flu? 	- Usually your doctor can treat your flu symptoms 	in the office. 	- Reasons to go to the ER would be for: 		∙ Difficulty breathing 		∙ Confusion 		∙ Difficulty to arouse 		∙ Dehydration caused by severe vomiting 			and/or diarrhea symptoms</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -743,6 +759,23 @@
                     <view key="view" contentMode="scaleToFill" id="R1M-bm-xri">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Handwashing and Infection Control" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeY-oF-fT4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h6D-xg-Lhm">
+                                <rect key="frame" x="16" y="131" width="343" height="487"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">∙ Frequent handwashing with soap and water can limit the spread of the flu                                               ∙ While coughing or sneezing, cover your mouth and nose with the sleeve of your clothing at the inner elbow                                                                               ∙ Wash your hands or use hand sanitizer immediately after coughing or sneezing                                            ∙ Throw dirty tissues away immediately                       ∙ Avoid contact with your nose mouth and eyes          ∙ Avoid close contact with sick people                         ∙ If you have flu-like symptoms, stay home for at least 24 hours after your fever is gone without the use of medications to reduce the fever.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vyR-KO-02p"/>
                     </view>
@@ -751,7 +784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKu-mB-v6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-511" y="988"/>
+            <point key="canvasLocation" x="-511.19999999999999" y="987.25637181409309"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="OWX-4e-BQQ">
