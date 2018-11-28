@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4611A53621AF266600D56B94 /* WhoShouldreceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4611A53521AF266600D56B94 /* WhoShouldreceiveViewController.swift */; };
 		63C9AF0721A9BC060011BB4F /* FactsFictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9AF0621A9BC060011BB4F /* FactsFictionViewController.swift */; };
 		63C9AF0921A9BD670011BB4F /* FactsFictionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9AF0821A9BD670011BB4F /* FactsFictionCell.swift */; };
 		63C9AF0D21A9CB090011BB4F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9AF0C21A9CB090011BB4F /* NavigationController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4611A53521AF266600D56B94 /* WhoShouldreceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoShouldreceiveViewController.swift; sourceTree = "<group>"; };
 		63C9AF0621A9BC060011BB4F /* FactsFictionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsFictionViewController.swift; sourceTree = "<group>"; };
 		63C9AF0821A9BD670011BB4F /* FactsFictionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsFictionCell.swift; sourceTree = "<group>"; };
 		63C9AF0C21A9CB090011BB4F /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				E31C9102219270B00010539E /* ViewController.swift */,
 				E31C912E219275A40010539E /* TabBarController.swift */,
 				E31C9104219270B00010539E /* Main.storyboard */,
+				4611A53521AF266600D56B94 /* WhoShouldreceiveViewController.swift */,
 				63C9AF0C21A9CB090011BB4F /* NavigationController.swift */,
 				63C9AF0821A9BD670011BB4F /* FactsFictionCell.swift */,
 				63C9AF0E21A9D4A50011BB4F /* TitleCell.swift */,
@@ -277,6 +280,7 @@
 				E31C9103219270B00010539E /* ViewController.swift in Sources */,
 				63C9AF0721A9BC060011BB4F /* FactsFictionViewController.swift in Sources */,
 				E31C9101219270B00010539E /* AppDelegate.swift in Sources */,
+				4611A53621AF266600D56B94 /* WhoShouldreceiveViewController.swift in Sources */,
 				63C9AF0921A9BD670011BB4F /* FactsFictionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

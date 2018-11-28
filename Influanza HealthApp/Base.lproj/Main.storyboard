@@ -356,7 +356,7 @@
                                 <rect key="frame" x="16" y="125" width="343" height="493"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">∙ The flu virus is constantly changing, making us vulnerable to the flu every year.                                ∙ The flu vaccine contains antigens of the predicted flu strains for that season                          ∙ Anyone over the age of 6 months should receive a flu vaccine every year                                                 ∙ Administered in a shot in the upper arm or, under special circumstances, may be given in the nose                                                                                   ∙ A single dose of the flu vaccine should be given before the onset of flu activity                                        ∙ The flu shot does contain a live virus, those who should not receive the live virus vaccine include: children ages 2-4 who have asthma, persons who are immunocompromised, close contacts and caregivers of an immunocompromised person, pregnant women, and people who have received influenza antiviral medications within the previous 48 hours</mutableString>
+                                <string key="text">∙ The flu virus is constantly changing, making us vulnerable to the flu every year.                                ∙ The flu vaccine contains antigens of the predicted flu strains for that season                          ∙ Anyone over the age of 6 months should receive a flu vaccine every year                                                 ∙ Administered in a shot in the upper arm or, under special circumstances, may be given in the nose                                                                                   ∙ A single dose of the flu vaccine should be given before the onset of flu activity                                        ∙ The flu shot does contain a live virus, those who should not receive the live virus vaccine include: children ages 2-4 who have asthma, persons who are immunocompromised, close contacts and caregivers of an immunocompromised person, pregnant women, and people who have received influenza antiviral medications within the previous 48 hours</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -647,30 +647,16 @@
         <!--Who Should Receive?-->
         <scene sceneID="gZ8-LL-PII">
             <objects>
-                <viewController id="mCg-lO-Aqv" sceneMemberID="viewController">
+                <viewController id="mCg-lO-Aqv" customClass="WhoShouldReceiveViewController" customModule="Influanza_HealthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sBR-f8-9fZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzA-6g-1hj">
-                                <rect key="frame" x="16" y="20" width="74" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prevention"/>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="7f7-EV-JMw">
-                                <rect key="frame" x="74" y="82" width="227" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Who Should"/>
-                                    <segment title="Who Should Not"/>
-                                </segments>
-                                <connections>
-                                    <segue destination="6VK-Q1-F2S" kind="show" id="ZGg-cp-5TM"/>
-                                </connections>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHu-BS-oSJ">
-                                <rect key="frame" x="104" y="38" width="166" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHu-BS-oSJ">
+                                <rect key="frame" x="169.5" y="82" width="36" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LCe-GH-Nqp"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Who">
                                         <attributes>
@@ -681,55 +667,92 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eaZ-lF-PXu">
-                                <rect key="frame" x="67" y="145" width="240" height="438"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bD-5q-K48">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="54"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Who Should Absolutly Recieve the Flue Shot?">
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zOP-lA-xnm">
-                                        <rect key="frame" x="0.0" y="54" width="240" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">* Children age 6 months through 4 years (Infants less than 6 months are especially susceptible to the flue, but are too young to recieve the vaccine)</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="* Adults age 50 year or older" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-Xa-nky">
-                                        <rect key="frame" x="0.0" y="182" width="240" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="* People who have medical conditions that would make it difficult to fight infections. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-cH-OHX">
-                                        <rect key="frame" x="0.0" y="310" width="240" height="128"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5s-yX-Plb">
-                                <rect key="frame" x="316" y="20" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
-                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bD-5q-K48">
+                                <rect key="frame" x="67.5" y="166" width="240" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="cJP-gD-zng"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Who Should Absolutly Recieve the Flu Shot?">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="7f7-EV-JMw">
+                                <rect key="frame" x="74" y="126" width="227" height="29"/>
+                                <segments>
+                                    <segment title="Who Should"/>
+                                    <segment title="Who Should Not"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControlToggled:" destination="mCg-lO-Aqv" eventType="valueChanged" id="08k-87-CCC"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zOP-lA-xnm">
+                                <rect key="frame" x="67.5" y="220" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="O5M-xy-EhX"/>
+                                    <constraint firstAttribute="height" constant="128" id="V75-bn-IqF"/>
+                                </constraints>
+                                <string key="text">* Children age 6 months through 4 years (Infants less than 6 months are especially susceptible to the flue, but are too young to recieve the vaccine)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="* Adults age 50 year or older" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-Xa-nky">
+                                <rect key="frame" x="67.5" y="348" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="D2Z-aA-BsF"/>
+                                    <constraint firstAttribute="width" constant="240" id="TfS-J1-XDu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="* People who have medical conditions that would make it difficult to fight infections. " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-cH-OHX">
+                                <rect key="frame" x="67.5" y="476" width="240" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="lp2-K6-ibH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zOP-lA-xnm" firstAttribute="centerX" secondItem="sBR-f8-9fZ" secondAttribute="centerX" id="1MK-9Y-TfG"/>
+                            <constraint firstItem="pNE-cH-OHX" firstAttribute="leading" secondItem="4bD-5q-K48" secondAttribute="leading" id="3To-vP-AJz"/>
+                            <constraint firstItem="ku7-Xa-nky" firstAttribute="top" secondItem="zOP-lA-xnm" secondAttribute="bottom" id="8gF-Fy-wt6"/>
+                            <constraint firstItem="pNE-cH-OHX" firstAttribute="top" secondItem="ku7-Xa-nky" secondAttribute="bottom" id="Dcu-jC-7AX"/>
+                            <constraint firstItem="zOP-lA-xnm" firstAttribute="top" secondItem="4bD-5q-K48" secondAttribute="bottom" id="Hm7-4d-yss"/>
+                            <constraint firstItem="jQl-Uz-sgw" firstAttribute="bottom" secondItem="pNE-cH-OHX" secondAttribute="bottom" constant="58" id="Iih-Hl-yjl"/>
+                            <constraint firstItem="4bD-5q-K48" firstAttribute="top" secondItem="7f7-EV-JMw" secondAttribute="bottom" constant="12" id="LcB-5c-6T5"/>
+                            <constraint firstItem="ku7-Xa-nky" firstAttribute="centerX" secondItem="sBR-f8-9fZ" secondAttribute="centerX" id="WTW-lL-THa"/>
+                            <constraint firstItem="pNE-cH-OHX" firstAttribute="centerX" secondItem="sBR-f8-9fZ" secondAttribute="centerX" id="ZqS-T1-ZNL"/>
+                            <constraint firstItem="4bD-5q-K48" firstAttribute="centerX" secondItem="sBR-f8-9fZ" secondAttribute="centerX" id="aaH-SI-5ry"/>
+                            <constraint firstItem="7f7-EV-JMw" firstAttribute="top" secondItem="kHu-BS-oSJ" secondAttribute="bottom" constant="23" id="dvC-Ls-7w8"/>
+                            <constraint firstItem="7f7-EV-JMw" firstAttribute="centerX" secondItem="kHu-BS-oSJ" secondAttribute="centerX" id="fYA-UQ-EY1"/>
+                            <constraint firstItem="pNE-cH-OHX" firstAttribute="centerX" secondItem="7f7-EV-JMw" secondAttribute="centerX" id="gR8-pa-rt5"/>
+                            <constraint firstItem="kHu-BS-oSJ" firstAttribute="top" secondItem="jQl-Uz-sgw" secondAttribute="top" constant="18" id="ks7-tK-ips"/>
+                            <constraint firstItem="ku7-Xa-nky" firstAttribute="centerX" secondItem="sBR-f8-9fZ" secondAttribute="centerX" id="qWf-vp-cAI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jQl-Uz-sgw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Who Should Receive?" id="woQ-0z-Foz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="segmentControl" destination="7f7-EV-JMw" id="s8z-qW-hWr"/>
+                        <outlet property="textView1" destination="4bD-5q-K48" id="Kor-iU-IKw"/>
+                        <outlet property="textView2" destination="zOP-lA-xnm" id="QT6-aq-zsa"/>
+                        <outlet property="textView3" destination="ku7-Xa-nky" id="3Cd-Qe-L30"/>
+                        <outlet property="textView4" destination="pNE-cH-OHX" id="ZBg-Ri-R2Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cax-ik-mIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -771,7 +794,7 @@
                                 <rect key="frame" x="16" y="131" width="343" height="487"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">∙ Frequent handwashing with soap and water can limit the spread of the flu                                               ∙ While coughing or sneezing, cover your mouth and nose with the sleeve of your clothing at the inner elbow                                                                               ∙ Wash your hands or use hand sanitizer immediately after coughing or sneezing                                            ∙ Throw dirty tissues away immediately                       ∙ Avoid contact with your nose mouth and eyes          ∙ Avoid close contact with sick people                         ∙ If you have flu-like symptoms, stay home for at least 24 hours after your fever is gone without the use of medications to reduce the fever.</mutableString>
+                                <string key="text">∙ Frequent handwashing with soap and water can limit the spread of the flu                                               ∙ While coughing or sneezing, cover your mouth and nose with the sleeve of your clothing at the inner elbow                                                                               ∙ Wash your hands or use hand sanitizer immediately after coughing or sneezing                                            ∙ Throw dirty tissues away immediately                       ∙ Avoid contact with your nose mouth and eyes          ∙ Avoid close contact with sick people                         ∙ If you have flu-like symptoms, stay home for at least 24 hours after your fever is gone without the use of medications to reduce the fever.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -794,19 +817,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="NsP-7f-adw">
-                                <rect key="frame" x="74" y="60" width="227" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="NsP-7f-adw">
+                                <rect key="frame" x="74" y="43" width="227" height="29"/>
                                 <segments>
                                     <segment title="Who Should"/>
                                     <segment title="Who Should Not"/>
                                 </segments>
-                                <connections>
-                                    <segue destination="mCg-lO-Aqv" kind="show" id="35i-Tn-BLE"/>
-                                </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Should not Receive the Flu Shot" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAj-xJ-ue9">
+                                <rect key="frame" x="83" y="94" width="208" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* Infants younger than 6 months           of age" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfz-hr-hac">
+                                <rect key="frame" x="16" y="183" width="285" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* Individuals with severe life-threatening allergies to the flu vaccine" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KT-JX-XCM">
+                                <rect key="frame" x="16" y="255" width="285" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="* Individuals who have had a history of a severe paralyzing illness known as Guillian-Barre Syndrome" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-74-WCH">
+                                <rect key="frame" x="16" y="371" width="285" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NsP-7f-adw" firstAttribute="top" secondItem="RFA-sG-Wy0" secondAttribute="top" constant="23" id="wTV-AO-03W"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RFA-sG-Wy0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="Nvy-Pt-zKv"/>
@@ -814,7 +864,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAr-y2-9aq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3439" y="1719"/>
+            <point key="canvasLocation" x="-3439.1999999999998" y="1718.5907046476764"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="hcw-bo-M4v">
@@ -831,7 +881,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZI-q8-yfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="1038"/>
+            <point key="canvasLocation" x="-1866" y="1719"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="p7m-JS-kR7">
@@ -848,7 +898,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ir1-5h-jdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2305" y="1719"/>
+            <point key="canvasLocation" x="-1090" y="1719"/>
         </scene>
     </scenes>
     <resources>
@@ -856,7 +906,6 @@
         <image name="Screen Shot 2018-11-21 at 9.53.51 AM" width="276" height="220"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="y6k-sm-y4U"/>
         <segue reference="ySq-CU-5oe"/>
     </inferredMetricsTieBreakers>
 </document>
